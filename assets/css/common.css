@@ -1,0 +1,268 @@
+/*!
+ * Stylesteet: Common.css (Basic Layout for website)
+ * Main Stylesteet v1.0 (https://saiservice.com)
+ * Copyright 2017 Sai Service Groupsite
+ */
+ :root{
+  --blue: #69066f;
+  --light-blue: #547398;
+  --primary: #2d2d2d;
+  --second: #e3e3e3;
+  --white:#fff;
+ }
+
+@font-face {
+    font-family: 'DscHyundai';
+    src:  url('../fonts/DscHyundai.eot?l1zumd');
+    src:  url('../fonts/DscHyundai.eot?l1zumd#iefix') format('embedded-opentype'),
+      url('../fonts/DscHyundai.ttf?l1zumd') format('truetype'),
+      url('../fonts/DscHyundai.woff?l1zumd') format('woff'),
+      url('../fonts/DscHyundai.svg?l1zumd#DscHyundai') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+  font-family: 'semibold';
+  src: url('../fonts/proximanova-semibold-webfont.eot');
+  src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/proximanova-semibold-webfont.woff2') format('woff2'),
+      url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+      url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+      url('../fonts/proximanova-semibold-webfont.svg#proxima_novasemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'black';
+    src: url('../fonts/proximanova-black-webfont.eot');
+    src: url('../fonts/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-black-webfont.woff2') format('woff2'),
+        url('../fonts/proximanova-black-webfont.woff') format('woff'),
+        url('../fonts/proximanova-black-webfont.ttf') format('truetype'),
+        url('../fonts/proximanova-black-webfont.svg#proxima_novablack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-bold-webfont.woff2') format('woff2'),
+        url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+        url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+        url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'light';
+    src: url('proximanova-light-webfont.eot');
+    src: url('proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('proximanova-light-webfont.woff2') format('woff2'),
+        url('proximanova-light-webfont.woff') format('woff'),
+        url('proximanova-light-webfont.ttf') format('truetype'),
+        url('proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'regular';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-regular-webfont.woff2') format('woff2'),
+        url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+        url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+        url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'extrabold';
+    src: url('../fonts/proximanova-extrabold-webfont.eot');
+    src: url('../fonts/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-extrabold-webfont.woff2') format('woff2'),
+        url('../fonts/proximanova-extrabold-webfont.woff') format('woff'),
+        url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype'),
+        url('../fonts/proximanova-extrabold-webfont.svg#proxima_novaextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+   font-size: 14px;
+   background-color: #f7f9fb;	
+   overflow-x: hidden;
+   font-family: 'regular';
+   color: var(--primary);
+   position: relative;
+}
+a{
+  
+}
+.bg_white{background-color: var(--white);} /*WHITE BACKGROUND*/
+.bg_blue{background-color: var(--blue);}
+@media (min-width: 1200px){
+.main_container {max-width: 1224px;}
+}
+/*PAGE TITLE*/
+.section_title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: normal;
+  font-family: bold;
+}
+.page_tagline{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+  float: left;
+}
+.primary_title{
+  margin-top:0px;
+  margin-bottom: 0px;
+  font-size: 34px;
+  font-weight: 500;
+  float: left
+}
+.white_text{color: var(--white);}
+
+/*========================= FORM CONTROL INPUT ELEMENT =============================
+====================================================================================*/
+.price_advertisement_form .form-control:focus, .price_advertisement_form .form-control:active, .price_advertisement_form .form-control:hover {
+  z-index: 3;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-control:focus, .form-control:active, .form-control:hover {
+  z-index: 3;
+  background: #fff;
+  border-bottom:1px solid #00b460;
+  color: var(--blue) !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+}
+.price_advertisement_form .form-control {
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 12px 20px 12px;
+  line-height: normal;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  transition: none;
+}
+.form-control {
+  border-bottom:1px solid #184275;
+  background-color: #fff;
+  border-radius: 0;
+  padding: 12px 20px 12px;
+  line-height: normal;
+  font-size: 14px;
+  color: var(--blue);
+  transition: none;
+  font-weight: 500 !important;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  /*margin-bottom: 10px;*/
+}
+.gloabl_select{
+  width: 100%;
+  border-bottom:1px solid #184275;
+  background-color: #fff;
+  border-radius: 0;
+  height: calc(2.63rem + 2px);
+  padding: 12px 20px 12px;
+  line-height: normal;
+  font-size: 14px;
+  color: var(--blue);
+  transition: none;
+  font-weight: 500;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  /*margin-bottom: 10px;*/
+}
+option{
+  color: var(--blue);
+}
+.gloabl_select_white {
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  height: calc(2.63rem + 2px);
+  padding: 12px 20px 12px;
+  line-height: normal;
+  font-size: 14px;
+  color: #ffffff;
+  transition: none;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 10px !important;
+}
+.select_down_arrow_white {
+  background: transparent url(../images/down.svg) no-repeat right 0.75rem center;
+  background-size: 10px;
+}
+input::-webkit-input-placeholder {
+  color: var(--blue) !important;
+  font-weight: 500 !important;
+}
+      
+input:-moz-placeholder { /* Firefox 18- */
+  color: var(--blue) !important;
+  font-weight: 500 !important; 
+}
+      
+input::-moz-placeholder {  /* Firefox 19+ */
+  color: var(--blue) !important; 
+  font-weight: 500 !important;
+}
+      
+input:-ms-input-placeholder {  
+  color: var(--blue) !important;
+  font-weight: 500 !important; 
+}
+
+.price_advertisement_form input::-webkit-input-placeholder {
+  color: #fff !important;
+}
+      
+.price_advertisement_form input:-moz-placeholder { /* Firefox 18- */
+  color: #fff !important; 
+}
+      
+.price_advertisement_form input::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff !important; 
+}
+      
+.price_advertisement_form input:-ms-input-placeholder {  
+  color: #fff !important; 
+}
+
+
+
+   
+
+ 
+

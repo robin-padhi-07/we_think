@@ -1,0 +1,901 @@
+/*!
+ * Stylesteet: Responsive.css
+ * Main Stylesteet v1.0 (https://saiservice.com)
+ * Copyright 2017 Sai Service Groupsite
+ */
+
+.primary_color{
+	color: #0e2241;
+}
+
+span.toll_free{
+	text-align: right;
+	font-size: 14px;
+	color: #0e2241;
+	display: block;
+	font-weight: 400;
+}
+#hide_in_md{
+	display: none !important;
+}
+
+.main_header{
+	background-color: #0c2e75;
+	width: 100%;
+	float: left;
+	color: #fff !important;
+	position: sticky;
+    z-index: 99;
+}
+img.sai_logo {
+    margin-top: 22.5px;
+    margin-bottom: 22.5px;
+}
+img.suzuki_logo {
+    margin-top: 22.5px;
+	margin-bottom: 22.5px;
+	float: right;
+}
+
+.main_navigation{
+	background-color: #fff !important;
+}
+.main_navigation .nav-link{
+	color: #0E2240 !important;
+	font-size: 14px;
+	padding-right: 40px !important;
+}
+.fixed_main_navigation{
+	position: fixed;
+	top: 0px;
+	z-index: 9;
+	padding: 0px;
+}
+#fix_navigation{
+	transition: 0.9s;
+    transition-duration: 0.9s;
+    transform-style: preserve-3d;
+
+}
+.main_navbar{
+	list-style: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+}
+li.navbar_item {
+    display: inline-flex;
+}
+a.navbar_link {
+    display: block;
+	padding: 20px 36px;
+	color: #fff;
+	position: relative;
+	transition: opacity linear 0.15s;
+}
+.main_navbar>li.navbar_item:hover>a.navbar_link{
+	background: #fff;
+    color: var(--blue);
+	text-decoration: none;
+	transition: opacity linear 0.15s;
+}
+
+.main_navbar>li:hover .submenu, .main_navbar>li:hover>ul, .main_navbar ul li:hover ul {
+    display: block;
+	opacity: 1 !important;
+	
+}
+
+.submenu {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+	z-index: 100;
+	top:61px;
+    background: #fff;
+    -webkit-box-shadow: 1px 3px 2px 1px #ccc;
+	box-shadow: 1px 3px 2px 1px #ccc;
+	padding: 20px 20px 20px;
+	transition: opacity linear 0.15s;
+	
+	
+}
+.submenu {
+    display: none;
+}
+.submenu.corporate {
+    width: auto;
+    right: 0;
+	left: auto;
+	padding: 0;
+	box-shadow: none;
+}
+ul.drop-menu {
+    float: right;
+    text-align: right;
+    list-style: none;
+    padding: 0;
+	display: inline-block;
+	box-shadow: 1px 4px 5px 0px #d4d4d4;
+}
+ul.drop-menu>li{
+	display: inline-block;
+    float: right;
+    width: 100%;
+}
+.corporate>ul.drop-menu>li>a.drop-link{
+	background: #fff;
+    color: var(--blue);
+    text-decoration: none;
+    float: right;
+    text-align: center;
+    display: block;
+    padding: 16px 20px;
+    width: 100%;
+}
+.corporate>ul.drop-menu>li>a.drop-link:hover{
+	background: #0c2e75;
+	color: #FFF;
+}
+ul.nav-car-list {
+    padding: 0;
+    float: left;
+    list-style: none;
+    display: inline-block;
+    margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 6%;
+}
+li.nav-car-item {
+    display: inline-block;
+    text-align: left;
+    float: left;
+	margin-bottom: 20px;
+	max-width: 230px;
+}
+.nav-car-grid {
+    width: 100%;
+    float: left;
+    background: #fff;
+}
+.nav-car-img {
+    width: 50%;
+    float: left;
+}
+.nav-car-img img {
+    width: 100%;
+    height: auto;
+}
+span.nav-car-title {
+    float: left;
+    text-align: left;
+    font-family: 'heavy';
+    font-size: 14px;
+    line-height: normal;
+    margin-top: 30px;
+	width: 48%;
+	margin-left: 1.5%;
+}
+li.nav-car-item a{
+	color: var(--blue);
+}
+
+
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+@media (max-width: 640px){
+	.slider_caption {
+		margin-top: 40px;
+		position: absolute;
+		top: auto;
+		right: 5%;
+		left: 5%;
+		width: 90%;
+		z-index: 999;
+		bottom: 10%;
+	}
+	.title_line{display: none;}
+	.slider_fix_grid {
+		width: 67%;
+		margin-left: 16%;
+		margin-right: 16%;
+		display: none;
+	}
+	span.dash_line{
+		display: none;
+	}
+	.page-title{
+		font-size: 26px;
+	}
+	.page_tagline{
+		text-align: justify;
+	}
+	.hide-mobile{
+		display: none !important;
+	}
+	.hide-desktop{
+		display: flex !important;
+	}
+	#hide-desktop{
+		display: block !important;
+	}
+	.xs-mb-20{
+		margin-bottom: 20px;
+	}
+	.emi_amount{
+		padding: 0px;
+	}
+	.slider_mobile{
+		width: 100%;
+		float: left;
+		color: #fff!important;
+		height: 550px;
+		display: block;
+		background-color: #eaeaea;
+		background-size: cover!important;
+		background-position: center center;
+		background-repeat: no-repeat;
+		padding: 0;
+		max-width: 1140px;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+	}
+	img.slider_image{
+		transition: opacity .25s ease-in-out;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-repeat: no-repeat;
+		max-height: 550px;
+		max-width: 1140px;
+		width: auto;
+		height: 100%;
+		margin-left: -163px;
+	}
+
+	ul.social_icon {
+		float: left;
+	}
+	a.social_icon_list{
+		padding-left: 0px;
+		padding-right: 10px;
+	}
+	#mobile_navigation{
+		background-color: var(--blue) !important;
+	}
+	#mobile_navigation li.nav-item{
+		line-height: 44px;
+	}
+	#mobile_navigation .sai_logo{
+		margin-top: 0;
+		margin-bottom: 0;
+		float: left;
+	}
+	#mobile_navigation .suzuki_logo{
+		margin-top: 0;
+		width: 120px;
+		margin-bottom: 0;
+		float: left;
+	}
+	div#navbarSupportedContent {
+		margin-top: 10px;
+		border-top: 1px solid #f0f0f0;
+	}
+	.navbar-light .navbar-toggler {
+		color: rgba(0, 0, 0, 0.5);
+		border-color: transparent !important;
+		padding: 0;
+	}
+	.navbar-light .navbar-toggler-icon{
+		font-size: 28px;	
+	}
+	.right_sidebar{
+		padding-left: 0px;
+	}
+	.test_drive_widget{
+		margin-top: 0px;
+		margin-bottom: 20px;
+		padding: 35px 30px 35px;
+	}
+	.test_drive_widget a.test_drive_btn{
+		margin-top: 20px;
+	}
+	/*>>> SLIDER CSS MOBILE >>>>>>*/
+	.slider_caption_container{
+		margin-top: 40px;
+		position: absolute;
+		top: auto;
+		right: 5%;
+		left: 5%;
+		width: 90%;
+		z-index: 999;
+		bottom: 15%;
+	}
+	
+	.homepage_slider_container{
+		background-position: 14% 50%;
+		height: 500px;
+	}
+	.carousel-inner{
+		overflow: visible;
+	}
+	.mobile_banner_container{
+		background-size: cover!important;
+		background-position: center center;
+		background-repeat: no-repeat;
+		padding: 0;
+		max-width: 1140px;
+		position: relative;
+		overflow: hidden;
+		width: 100% !important;
+		height: 500px !important;
+	}
+	
+	span.slider_title {   
+	    margin-bottom: 0px;
+	    margin-top: 0px;
+	}
+	span.slider_make_name {
+    	
+    	margin-bottom: 0px;
+    	text-decoration: none;
+  	}
+  	span.slider_tagline {  
+	    margin-bottom: 10px;
+	    margin-top: 10px;
+    }
+    .icon-right-arrow-banner::before {
+	    content: "\e906";
+	    position: relative;
+	    top: 4px;
+	    left: -4px;
+	    font-size: 10px;
+	}
+	.about-img {
+        max-width: 100%
+    }
+    section.our_service {
+    	padding-bottom: 30px;
+    	padding-top: 30px;
+    }
+    .mga-tabs-left{
+    	margin-left: 0px;
+	}
+	.mga-tabs-right{
+   		margin-right: 0px;
+	}
+	.mga-tabs-font{
+    	font-size: 16px;
+    }	
+    .form_link_container{
+    	text-align: initial;
+    }
+	.nav-tabs .nav-link-modified{
+		padding: 0px 10px 0px !important;
+		font-size: 8.5pt !important;
+	}
+
+
+	/*-- END --*/
+	img.price_advertisement_img{
+		width: auto !important;
+	}
+	.price_advertisement_form{
+		max-width: 100%;
+		left: 15px;
+		right: 15px;
+	}
+
+	.offer_cards{
+		max-width: 100%;
+	}
+	
+	.service_car.float-right {
+		max-width: 100%;
+	}
+	.service_car.float-left {
+		max-width: 100%;
+		margin-top: 20px;
+	}
+
+	.right_blur:after, .left_blur:before{display: none;}
+	.item {
+		float: left;
+		width: 100%;
+		position: relative;
+		display: block;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.owl-prev{
+		left: 10px;
+		top: 55%;
+	}
+	.owl-next{
+		right: 10px;
+		top: 55%;
+	}
+	th.variant_name_th{
+		padding-left: 15px;
+	}
+	.variant_table thead th{
+		vertical-align: text-bottom;
+	}
+	td.variant_name_cell {
+		padding: 8px 0px 0px 15px;
+		width: 51%;
+	}
+	td.variant_price_cell {
+		width: 29%;
+	}
+	td.variant_btn_cell {
+		width: 20%;
+	}
+	span.variant_type{
+		margin-right: 10px;
+	}
+	.spec_body{
+		height: auto;
+	}
+
+	/*======== Book a test drive page ==============
+	===============================================*/
+	.ignis_book_test{
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+		margin-top: 20px;
+		width: 100%;
+		max-width: 100%;
+	}
+	.test_drive_container{
+		position: relative;
+		height: auto;
+		float: left;
+		width: 100%;
+	}
+	.test_drive_container img{
+		display: none;
+	}
+	.test_drive_popup, .loan_offer_popup{
+		max-width: 100%;
+	}
+	.xs-prl-0{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	/*On Road Price */
+	.filter_label {
+		width: 100%;
+		float: left;
+		margin-bottom: 6px;
+	}
+	.each_on_road_info {
+		border-top: 1px solid #ececed;
+		padding: 10px 15px 10px;
+	}
+	#progressbar li{
+		padding: 0px 7px 0px;
+	}
+	#msform .action-button{
+		padding: 13px 40px 13px;
+	}
+	a.form_link{
+		padding: 0px 10px 0px;
+	}
+	#step-element-form {
+		top: 0%;
+		width: 100%;
+		left: 0;
+		right: 0;
+	}
+	.step-element-container-insurance{
+		min-height: 800px !important;
+	}
+
+	/*Offer Page*/
+	td.offer_cards_item {
+		padding: 0px;
+		width: 100%;
+		float: left;
+		margin-bottom: 20px;
+	}
+	span.pagination_title_left {
+		text-align: center;
+		float: none;
+		margin: 0 auto;
+		display: block;
+	}
+	span.pagination_title_right {
+		text-align: center;
+		float: none;
+		margin: 0 auto;
+		display: block;
+		margin-right: 0;
+		margin-top: 10px;
+	}
+	.pagination {
+		box-shadow: 5px 5px 5px #888888;
+		margin: 0 auto;
+		text-align: center;
+		display: block;
+		width: 100%;
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	#exchange_car_bg {
+		right: 0px;
+		bottom: 2%;
+		top: auto;
+	}
+	.doubt_widget{
+		margin-bottom: 15px;
+		padding: 20px 20px 20px;
+	}
+	#exchange_page {
+		height: 900px;
+	}
+	.doubt_widget .test_drive_btn, span.test_drive_btn{
+		width: 100%;
+		margin-top: 10px;
+	}
+	.doubt_widget span.widget_tagline{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.thank_you_page {
+		max-width: 100%;
+		width: 100%;
+	}
+	.img_responsive{
+		max-width: 100%;
+		width: 100%;
+	  }
+	.error_title_h2, .error_title, .error_text{
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+	  }
+	.error_widget {
+		margin-top: 0px;
+		margin-bottom: 30px;
+	}
+	.hide-mobile{
+		display: none;
+	}
+	.finance_pop_up{
+		max-width: 100%;
+	}
+	.col-70{
+		width: 65%;
+	}
+	.col-30{
+		width: 30%;
+	}
+	span.fin_calc {
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+	a.icon_set.check_price_btn {
+		margin-left: 5%;
+	}
+	.offer_list_container .offer_cards{
+		max-width: 100% !important;
+		margin-right: 0px;
+	}
+	.nav-tabs .nav-link {
+		padding: 20px 20px 20px;
+		font-size: 10.5pt;
+	}
+	/*Variant Page*/
+	#features ul.spec_heading {
+		padding-left: 0;
+		margin-right: 0;
+		max-width: 60%;
+		float: left;
+	}
+	#features li.spec_head_item {
+		line-height: 18px;
+		text-align: left;
+		float: left;
+		margin-bottom: 15px;
+		width: 100%;
+		height: 36px;
+	}
+	#features ul.spec_value {
+		margin-left: 0;
+		width: 39%;
+		float: right;
+		text-align: right;
+		padding-right: 24px;
+		line-height: 0;
+	}
+	#features li.spec_item {
+		line-height: 18px;
+		text-align: left;
+		margin-bottom: 15px;
+		margin-left: 14px;
+		width: 100%;
+		height: 36px;
+	}
+
+	#specifications ul.spec_heading {
+		padding-left: 0;
+		margin-right: 0;
+		max-width: 60%;
+		float: left;
+	}
+	#specifications li.spec_head_item {
+		line-height: 18px;
+		text-align: left;
+		float: left;
+		margin-bottom: 15px;
+		width: 100%;
+		height: 36px;
+	}
+	#specifications ul.spec_value {
+		margin-left: 0;
+		width: 39%;
+		float: right;
+		text-align: right;
+		padding-right: 24px;
+		line-height: 0;
+	}
+	#specifications li.spec_item {
+		line-height: 18px;
+		text-align: left;
+		margin-bottom: 15px;
+		margin-left: 14px;
+		width: 100%;
+		height: 36px;
+	}
+	/*Variant Page Scroll*/
+	#hide_in_md{
+		display: block !important;	
+	}
+	.scroll_list_container {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		margin-top: 0 !important;
+		height: 40px;
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.scroll_list_header {
+		width: 100%;
+		height: 50px;
+		overflow: scroll;
+		position: absolute;
+		display: block;
+		background: #fff;
+	}
+	.list-group {
+		position: absolute;
+		height: 25px;
+		margin-top: 8px;
+		width: 1700px;
+		display: block;
+		flex-direction: row;
+	}
+	#scroll_list_header .list-group {
+		position: absolute;
+		height: 25px;
+		margin-top: 8px;
+		width: 600px;
+		display: block;
+		flex-direction: row;
+	}
+	.scroll_list_container .list-group-item {
+		float: left;
+		margin-right: 15px;
+		white-space: nowrap;
+		margin-top: 0;
+		margin-bottom: 10px;
+		text-shadow: 1px 1px #FFF;
+		display: inline-block;
+		width: auto;
+		padding: 5px 0px 5px 0px;
+		border: 0;
+		background: transparent;
+	}
+	.scroll_list_header .list-group-item.active {
+		z-index: 2;
+		color: var(--blue);
+		background-color: transparent;
+		border-color: transparent;
+	}
+	.scroll_list_header .list-group-item.active::after{
+		position: absolute;
+		content: "";
+		left: 0;
+		height: 2px;
+		bottom: -4px;
+		width: 100%;
+		background: var(--blue);
+	}
+
+	.scroll_list_header .rightside_arrow:before{
+		display: none;
+	}
+	.right_divider:before {
+		display: none;
+	}
+	.border_left {
+		border-left: 0px !important;
+	}
+	#mga_list .model_cars{
+		max-width: 100% !important;
+		margin-right: 0px;
+	}
+	.hidden-mobile{
+		display: none;
+	}
+}
+@media (min-width:641px) and (max-width:980px){
+	#hide_in_md{
+		display: block !important;	
+	}
+	.scroll_list_container {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		margin-top: 0 !important;
+		height: 40px;
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.scroll_list_header {
+		width: 100%;
+		height: 50px;
+		overflow: scroll;
+		position: absolute;
+		display: block;
+		background: #fff;
+	}
+	.list-group {
+		position: absolute;
+		height: 25px;
+		margin-top: 8px;
+		width: 1700px;
+		display: block;
+		flex-direction: row;
+	}
+	#scroll_list_header .list-group {
+		position: absolute;
+		height: 25px;
+		margin-top: 8px;
+		width: 600px;
+		display: block;
+		flex-direction: row;
+	}
+	.scroll_list_container .list-group-item {
+		float: left;
+		margin-right: 15px;
+		white-space: nowrap;
+		margin-top: 0;
+		margin-bottom: 10px;
+		text-shadow: 1px 1px #FFF;
+		display: inline-block;
+		width: auto;
+		padding: 5px 0px 5px 0px;
+		border: 0;
+		background: transparent;
+	}
+	.scroll_list_header .list-group-item.active {
+		z-index: 2;
+		color: var(--blue);
+		background-color: transparent;
+		border-color: transparent;
+	}
+	.scroll_list_header .list-group-item.active::after{
+		position: absolute;
+		content: "";
+		left: 0;
+		height: 2px;
+		bottom: -4px;
+		width: 100%;
+		background: #ef3926;
+	}
+
+	.scroll_list_header .rightside_arrow:before{
+		display: none;
+	}
+	.right_divider:before {
+		display: none;
+	}
+	.border_left {
+		border-left: 0px !important;
+	}
+	#mga_list .model_cars{
+		max-width: 100% !important;
+		margin-right: 0px;
+	}
+}
+
+
+@media (min-width:992px) and (max-width:1200px){
+	.offer_list_container .offer_cards {
+		margin-bottom: 30px;
+		transition: all 300ms ease-out;
+		max-width: 215px;
+		margin-right: 10px;
+	}
+	a.navbar_link {
+		padding: 30px 10px;
+	}
+	a.test_drive_btn, span.test_drive_btn, a.secondary_btn{
+		padding: 5.5px 10px 5.5px;
+		font-size: 12px;
+	}
+	.test_drive_widget {
+		padding: 15px 15px 15px;
+	}
+	span.widget_title{
+		font-size: 18px;
+		line-height: normal;
+	}
+	.nav-tabs .nav-link{
+		padding: 20px 30px 20px;
+		font-size: 14px;
+	}
+
+
+	
+}
+
+
+/* SLIDER RESPONSIVE CSS */
+/* .homepage_slider_container {
+	height: 550px;
+	overflow: hidden;
+	background-position: 14% 50%;
+}
+
+.mobile_banner_container {
+	overflow: hidden;
+	width: 100%;
+	height: 550px;
+	color: #fff!important;
+	background-size: cover!important;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 0;
+	max-width: 1366px;
+	position: relative;
+}
+img.banner_in_mobile {
+	max-width: 1366px;
+	height: 100%;
+	width: auto !IMPORTANT;
+	margin-left: -224px;
+	-webkit-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+	background-size: cover;
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	right: 0;
+	background-repeat: no-repeat;
+	max-height: 330px;
+} */

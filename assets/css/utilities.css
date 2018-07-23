@@ -1,0 +1,211 @@
+/*!
+ * Stylesteet: Responsive.css
+ * Main Stylesteet v1.0 (https://saiservice.com)
+ * Copyright 2017 Sai Service Groupsite
+ */
+ 
+ /* https://codepen.io/Kseso/pen/bfzjC */
+ /* https://codepen.io/mxttsco/pen/KgodYm */
+
+.no-display{
+    display: none;
+}
+
+/*Padding RIGHT/LEFT/TOP/BOTTOM are zero*/
+.pl_0{
+    padding-left: 0px !important;
+}
+.pr_0{
+    padding-right:  0px !important;
+}
+.pt_0{
+    padding-top: 0px !important;
+}
+.pb_0{
+    padding-bottom: 0px !important;
+}
+/*========== END ==========*/
+
+.padding_lr{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mt_100{
+    margin-top: 100px;
+}
+
+.border_left{
+    border-left: 1px solid #ececed;
+}
+
+.p_5{
+    padding: 5px !important;
+}
+.p_10{
+    padding: 10px !important;
+}
+.p_15{
+    padding: 15px !important;
+}
+.p_20{
+    padding: 20px !important;
+}
+/*Padding from LEFT*/
+.pl_5{
+    padding-left: 5px !important;
+}
+.pl_10{
+    padding-left: 10px !important;
+}
+.pl_15{
+    padding-left: 15px !important;
+}
+.pl_20{
+    padding-left: 20px !important;
+}
+
+/*Padding from RIGHT*/
+.pr_5{
+    padding-right: 5px !important;
+}
+.pr_10{
+    padding-right: 10px !important;
+}
+.pr_15{
+    padding-right: 15px !important;
+}
+.pr_20{
+    padding-right: 20px !important;
+}
+
+.pt_5{
+    padding-top: 5px !important;
+}
+.pt_10{
+    padding-top: 10px !important;
+}
+.pt_15{
+    padding-top: 15px !important;
+}
+.pt_20{
+    padding-top: 20px !important;
+}
+
+.pb_5{
+    padding-bottom: 5px !important;
+}
+.pb_10{
+    padding-bottom: 10px !important;
+}
+.pb_15{
+    padding-bottom: 15px !important;
+}
+.pb_20{
+    padding-bottom: 20px !important;
+}
+
+.m_5{
+    margin: 5px !important;
+}
+.m_10{
+    margin: 10px !important;
+}
+.m_15{
+    margin: 15px !important;
+}
+.m_20{
+    margin: 20px !important;
+}
+
+
+.mb_5{
+    margin-bottom: 5px !important;
+}
+.mb_10{
+    margin-bottom: 10px !important;
+}
+.mb_15{
+    margin-bottom: 15px !important;
+}
+.mb_20{
+    margin-bottom: 20px !important;
+}
+.mb_30{
+    margin-bottom: 30px !important;
+}
+.mb_40{
+    margin-bottom: 40px !important;
+}
+.mb_80{
+    margin-bottom: 40px !important;
+}
+.mt_5{
+    margin-top:5px !important;
+}
+.mt_10{
+    margin-top:10px !important;
+}
+.mt_15{
+    margin-top:15px !important;
+}
+.mt_20{
+    margin-top:20px !important;
+}
+.mt_30{
+    margin-top:30px !important;
+}
+.mt_40{
+    margin-top:40px !important;
+}
+
+
+.mr_5{
+    margin-right:5px !important;
+}
+.mr_10{
+    margin-right:10px !important;
+}
+.mr_15{
+    margin-right:15px !important;
+}
+.mr_20{
+    margin-right:20px !important;
+}
+.mr_25{
+    margin-right: 24px !important;
+}
+
+.ml_5{
+    margin-left:5px !important;
+}
+.ml_10{
+    margin-left:10px !important;
+}
+.ml_15{
+    margin-left:15px !important;
+}
+.ml_20{
+    margin-left:20px !important;
+}
+.ml_30{
+    margin-left:30px !important;
+}
+
+
+.heading-white{
+    color: #fff !important;
+}
+
+.text_center{
+    text-align: center !important;
+}
+
+.no-padding{
+    padding: 0px !important;
+}
+
+.no-margin{
+    margin: 0px !important;
+}
+
+
