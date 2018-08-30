@@ -152,13 +152,10 @@ a{
 .form-control:focus, .form-control:active, .form-control:hover {
   z-index: 3;
   background: #fff;
-  border-bottom:1px solid #00b460;
+  border:1px solid #00b460;
   color: var(--blue) !important;
   -webkit-box-shadow: none;
   box-shadow: none;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
 }
 .price_advertisement_form .form-control {
   border: 1px solid #fff;
@@ -172,18 +169,15 @@ a{
   transition: none;
 }
 .form-control {
-  border-bottom:1px solid #184275;
+  border:1px solid #184275;
   background-color: #fff;
-  border-radius: 0;
+  border-radius: 4px;
   padding: 12px 20px 12px;
   line-height: normal;
   font-size: 14px;
   color: var(--blue);
   transition: none;
   font-weight: 500 !important;
-  border-top: 0px;
-  border-right: 0px;
-  border-left: 0px;
   /*margin-bottom: 10px;*/
 }
 .gloabl_select{

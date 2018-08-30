@@ -6,7 +6,7 @@
 
 /*========= HOME PAGE ==================
 =============================================*/
-.top_header { float: left; width: 100%; background: #fff; border-bottom: 1px solid #ebebeb; padding: 5px 0px 5px;box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);z-index: 1;}
+.top_header { float: left; width: 100%; background: #fff; border-bottom: 1px solid #ebebeb; padding: 5px 0px 5px;box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.13);z-index: 11; position: relative;}
 span.top_logo { padding: 4px 0px 4px; float: left; }
 ul.top_navigation { display: inline-flex; list-style: none; float: right; text-align: right; padding-left: 0; margin-bottom: 0; }
 ul.top_navigation>li { text-align: right; padding: 10px 10px 10px; }
@@ -52,8 +52,28 @@ ul.slider_spec {
     font-size: 14px;
     line-height: 16px;
 }
-.primary_btn{}
-.second_btn{}
+.primary_btn {
+    background: var(--blue);
+    color: #fff;
+    padding: 10px 20px 10px;
+    float: left;
+    display: block;
+    border: 1px solid #930b9c;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'semibold';
+}
+.second_btn{
+    background: transparent;
+    color:var(--blue);
+    padding: 10px 20px 10px;
+    float: left;
+    display: block;
+    border: 1px solid var(--blue);;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'semibold';
+}
 ul.solution_list {
     list-style: none;
     padding-left: 0;
