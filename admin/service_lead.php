@@ -1,18 +1,16 @@
 <?php
-    require_once('../consumer/config.php');
+    require_once('common/config.php');
     $sql = "SELECT service.*,services_list.service_name, services_list.created_at FROM `service` LEFT JOIN services_list ON service.company_name = services_list.id  ORDER BY `company_name`";
-    $qry = mysqli_query($con,$sql);
+    $qry = mysqli_query($link,$sql);
 
 ?>
 <script>
-$(document).ready(function() {
-    $('#service_lead_table').DataTable();
-} );
+    $(document).ready(function() {
+        $('#service_lead_table').DataTable();
+    } );
 </script>
 
-<div class="col-md-12 float-left mt_10 p_20 bg_white">
-    <span class="mt_15 mb_15 mt_10">Service Lead</span>
-
+<div class="col-md-12 float-left mt_10 p_20 bg_white">    
     <table id="service_lead_table" class="display table" style="width:100%">
         <thead>
             <tr>

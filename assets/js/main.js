@@ -12,7 +12,7 @@ function _bindhome_slider() {
         loop: false,
         nav: true,
         margin: 0,
-        dots: false,
+        dots: true,
         autoplayHoverPause: true,
         responsive: {
             680: {

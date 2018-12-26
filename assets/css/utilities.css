@@ -90,6 +90,12 @@
 .pt_20{
     padding-top: 20px !important;
 }
+.pt_30{
+    padding-top: 30px !important;
+}
+.pt_60{
+    padding-top: 60px !important;
+}
 
 .pb_5{
     padding-bottom: 5px !important;
@@ -102,6 +108,12 @@
 }
 .pb_20{
     padding-bottom: 20px !important;
+}
+.pb_30{
+    padding-bottom: 30px !important;
+}
+.pb_60{
+    padding-bottom: 60px !important;
 }
 
 .m_5{
@@ -117,7 +129,7 @@
     margin: 20px !important;
 }
 
-
+.mb_0{margin-bottom: 0 !important;}
 .mb_5{
     margin-bottom: 5px !important;
 }

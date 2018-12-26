@@ -1,17 +1,14 @@
  <?php 
 include ("header.php");
-
-
-include("/config.php");
      
-
 $service_list=array();
+
 $sql="SELECT id, service_name,status FROM services_list";
- $query=mysqli_query($con, $sql);
+
+ $query=mysqli_query($link, $sql);
+
  if(mysqli_num_rows( $query)>0){ $i=0;
    while( $row=mysqli_fetch_assoc($query)){
-      
-       //$service_list[$row["id"]]=$row["service_name"]. " Rs.(".$row["status"].")";
        $service_list[$i]['id']=$row["id"];
        $service_list[$i]['service_name']=$row["service_name"];
        $service_list[$i]['status']=$row["status"];
@@ -21,11 +18,7 @@ $sql="SELECT id, service_name,status FROM services_list";
 //print_r( $service_list); die("Asdf");
 ?>
 
-     
-
-
-
-<div class="float-left w-100 bg_white">
+<div class="float-left w-100 bg_white pb_20">
     <h1 class="slider_title text-center mb_20 mt_20">Choose Service </h1>
 
     <div class="container main_container pb_20 pt_20">
@@ -50,7 +43,7 @@ $sql="SELECT id, service_name,status FROM services_list";
         </div>
         <div class="row">
             <div class="form-group col-md-4 float-left">
-                <select name="service" id="" class="form-control">
+                <select name="service" id="" class="gloabl_select">
                 <option value="">Chosse Service</option>
                   <?php foreach($service_list as $service) { ?> 
                 
@@ -69,7 +62,33 @@ $sql="SELECT id, service_name,status FROM services_list";
     </div>
 </div>
 
-<?php
-include ("footer.php")
+<div class="float-left w-100">
+    <h1 class="slider_title text-center mb_20 mt_20">Upcoming Event</h1>
+    
+    <input type="button" id="display" value="Display All Data" />
+    
+    <div id="responsecontainer" align="center">
+</div>
 
+
+
+
+<?php
+    include ("footer.php")
 ?>
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+        $.ajax({    //create an ajax request to display.php
+            type: "GET",
+            url: "display.php",             
+            dataType: "html",   //expect html to be returned                
+            success: function(response){                    
+                $("#responsecontainer").html(response); 
+                //alert(response);
+            }
+            });
+    });
+
+</script>
